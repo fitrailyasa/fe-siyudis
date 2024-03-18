@@ -1,0 +1,45 @@
+.bar-progres {
+  counter-reset: langkah;
+}
+.bar-progres li {
+  list-style-type: none;
+  float: left;
+  width: 19%;
+  position: relative;
+  text-align: center;
+}
+.bar-progres li:before {
+  content: counter(langkah);
+  counter-increment: langkah;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.bar-progres li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.bar-progres li:first-child:after {
+  content: none;
+}
+.bar-progres li.aktif {
+  color: green;
+}
+.bar-progres li.aktif:before {
+  border-color: green;
+}
+.bar-progres li.aktif + li:after {
+  background-color: green;
+}
