@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SIYUDIS | Dashboard</title>
+  <title>SIYUDIS | Validasi Berkas</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -34,7 +34,7 @@
       <li class="nav-item">
       <div class="user-panel d-flex">
         <div class="image">
-          <img src="../../../assets/img/default.png" class="img-circle elevation-2" alt="User Image">
+          <img src="#" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin FTI</a>
@@ -63,7 +63,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="#" class="nav-link active" style="color: black;">
+            <a href="../dashboard/index.html" class="nav-link" style="color: black;">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Dashboard
@@ -71,26 +71,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../validasi_pendaftaran/index.html" class="nav-link" style="color: black;">
+            <a href="#" class="nav-link active" style="color: black;">
               <i class="nav-icon fas fa-check"></i>
               <p>
-                Validasi Pendaftaran
+                Validasi Berkas
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../data_yudisium/index.html" class="nav-link" style="color: black;">
+            <a href="../data_pustaka/index.html" class="nav-link" style="color: black;">
               <i class="nav-icon fas fa-file"></i>
               <p>
-                Kelola Data Yudisium
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../periode/index.html" class="nav-link" style="color: black;">
-              <i class="nav-icon fas fa-calendar"></i>
-              <p>
-                Periode & Tanda Terima
+                Data Bebas Pustaka
               </p>
             </a>
           </li>
@@ -116,12 +108,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Validasi Berkas</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Admin FTI</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active">Validasi Berkas</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -133,41 +125,125 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Belum Divalidasi</p>
+          <div class="col-12">
+            <div class="card mb-5">
+              <div class="card-header">
               </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th style="background-color: #C4821F; color: white;">No</th>
+                    <th style="background-color: #C4821F; color: white;">Nama</th>
+                    <th style="background-color: #C4821F; color: white;">NIM</th>
+                    <th style="background-color: #C4821F; color: white;">Prodi</th>
+                    <th style="background-color: #C4821F; color: white;">Status Peminjaman</th>
+                    <th style="background-color: #C4821F; color: white;">Status</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Gery</td>
+                    <td>123456</td>
+                    <td>Sistem Informasi</td>
+                    <td><b>Tidak Ada</b></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal">Terima</button>
+                      <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">Tolak</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Gery</td>
+                    <td>123456</td>
+                    <td>Sistem Informasi</td>
+                    <td><b>Tidak Ada</b></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal">Terima</button>
+                      <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">Tolak</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Gery</td>
+                    <td>123456</td>
+                    <td>Sistem Informasi</td>
+                    <td><b>Tidak Ada</b></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal">Terima</button>
+                      <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">Tolak</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Gery</td>
+                    <td>123456</td>
+                    <td>Sistem Informasi</td>
+                    <td><b>Tidak Ada</b></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal">Terima</button>
+                      <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">Tolak</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Gery</td>
+                    <td>123456</td>
+                    <td>Sistem Informasi</td>
+                    <td><b>Tidak Ada</b></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#exampleModal">Terima</button>
+                      <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModal">Tolak</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th style="background-color: #C4821F; color: white;">No</th>
+                    <th style="background-color: #C4821F; color: white;">Nama</th>
+                    <th style="background-color: #C4821F; color: white;">NIM</th>
+                    <th style="background-color: #C4821F; color: white;">Prodi</th>
+                    <th style="background-color: #C4821F; color: white;">Status Peminjaman</th>
+                    <th style="background-color: #C4821F; color: white;">Status</th>
+                  </tr>
+                  </tfoot>
+                </table>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <!-- /.card-body -->
             </div>
+            <!-- /.card -->
           </div>
-          <div class="col-lg-4 col-6">
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53</h3>
-
-                <p>Sudah Divalidasi</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <!-- ./col -->
+          <!-- /.col -->
         </div>
         <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
+
+    </div>
   <!-- /.content-wrapper -->
+
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Modal Content Goes Here
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+          <!-- Additional buttons can be added here -->
+        </div>
+      </div>
+    </div>
+  </div>
 
     <footer class="main-footer fixed-bottom">
         <strong>Copyright &copy; 2024 <a href="#">SIYUDIS</a>.</strong> All rights reserved.
@@ -205,7 +281,7 @@
 <script>
   $(function () {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "responsive": true, "lengthChange": false, "autoWidth": false, 
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({

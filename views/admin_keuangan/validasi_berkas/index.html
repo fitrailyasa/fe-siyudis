@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SIYUDIS | Validasi Pendaftaran</title>
+  <title>SIYUDIS | Validasi Berkas</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -34,7 +34,7 @@
       <li class="nav-item">
       <div class="user-panel d-flex">
         <div class="image">
-          <img src="../../../assets/img/default.png" class="img-circle elevation-2" alt="User Image">
+          <img src="#" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin FTI</a>
@@ -74,23 +74,15 @@
             <a href="#" class="nav-link active" style="color: black;">
               <i class="nav-icon fas fa-check"></i>
               <p>
-                Validasi Pendaftaran
+                Validasi Berkas
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../data_yudisium/index.html" class="nav-link" style="color: black;">
+            <a href="../data_ukt/index.html" class="nav-link" style="color: black;">
               <i class="nav-icon fas fa-file"></i>
               <p>
-                Kelola Data Yudisium
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../periode/index.html" class="nav-link" style="color: black;">
-              <i class="nav-icon fas fa-calendar"></i>
-              <p>
-                Periode & Tanda Terima
+                Kelola Data Bebas UKT
               </p>
             </a>
           </li>
@@ -116,12 +108,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Validasi Pendaftaran</h1>
+            <h1 class="m-0">Validasi Berkas</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active">Validasi Pendaftaran</li>
+              <li class="breadcrumb-item active">Validasi Berkas</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -135,34 +127,30 @@
         <div class="row">
           <div class="col-12">
             <div class="card mb-5">
+              <div class="card-header">
+              </div>
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Nama</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">NIM</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Prodi</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">FC Ijazah SMA</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">FC Akta Kelahiran</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas UKT</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas Lab</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas Pustaka</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Sertifikat TOEFL</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Pas Foto 3x4</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Detail Berkas</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Status</th>
+                    <th style="background-color: #C4821F; color: white;">No</th>
+                    <th style="background-color: #C4821F; color: white;">Nama</th>
+                    <th style="background-color: #C4821F; color: white;">NIM</th>
+                    <th style="background-color: #C4821F; color: white;">Prodi</th>
+                    <th style="background-color: #C4821F; color: white;">BA Sidang</th>
+                    <th style="background-color: #C4821F; color: white;">KHS (TTD Doswal)</th>
+                    <th style="background-color: #C4821F; color: white;">SS AVITA</th>
+                    <th style="background-color: #C4821F; color: white;">Detail Berkas</th>
+                    <th style="background-color: #C4821F; color: white;">Status</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
+                    <td>1</td>
                     <td>Gery</td>
                     <td>123456</td>
                     <td>Sistem Informasi</td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
@@ -172,14 +160,11 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>2</td>
                     <td>Gery</td>
                     <td>123456</td>
                     <td>Sistem Informasi</td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
@@ -189,14 +174,11 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>3</td>
                     <td>Gery</td>
                     <td>123456</td>
                     <td>Sistem Informasi</td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
@@ -206,14 +188,11 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>4</td>
                     <td>Gery</td>
                     <td>123456</td>
                     <td>Sistem Informasi</td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
@@ -223,14 +202,11 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>5</td>
                     <td>Gery</td>
                     <td>123456</td>
                     <td>Sistem Informasi</td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
                     <td><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">Lihat</button></td>
@@ -242,18 +218,15 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Nama</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">NIM</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Prodi</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">FC Ijazah SMA</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">FC Akta Kelahiran</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas UKT</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas Lab</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">SK Bebas Pustaka</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Sertifikat TOEFL</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Pas Foto 3x4</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Detail Berkas</th>
-                    <th class="small align-items-center m-0" style="background-color: #C4821F; color: white;">Status</th>
+                    <th style="background-color: #C4821F; color: white;">No</th>
+                    <th style="background-color: #C4821F; color: white;">Nama</th>
+                    <th style="background-color: #C4821F; color: white;">NIM</th>
+                    <th style="background-color: #C4821F; color: white;">Prodi</th>
+                    <th style="background-color: #C4821F; color: white;">BA Sidang</th>
+                    <th style="background-color: #C4821F; color: white;">KHS (TTD Doswal)</th>
+                    <th style="background-color: #C4821F; color: white;">SS AVITA</th>
+                    <th style="background-color: #C4821F; color: white;">Detail Berkas</th>
+                    <th style="background-color: #C4821F; color: white;">Status</th>
                   </tr>
                   </tfoot>
                 </table>
@@ -272,7 +245,7 @@
     </div>
   <!-- /.content-wrapper -->
 
-  <!-- Modal -->
+    <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">

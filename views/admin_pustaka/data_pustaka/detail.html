@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SIYUDIS | Dashboard</title>
+  <title>SIYUDIS | Detail Berkas</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -37,7 +37,7 @@
           <img src="../../../assets/img/default.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Mahasiswa</a>
+          <a href="#" class="d-block">Admin FTI</a>
         </div>
         </a>
       </li>
@@ -63,7 +63,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="#" class="nav-link active" style="color: black;">
+            <a href="../dashboard/index.html" class="nav-link" style="color: black;">
               <i class="nav-icon fas fa-home"></i>
               <p>
                 Dashboard
@@ -71,26 +71,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../pendaftaran_yudis/index.html" class="nav-link" style="color: black;">
-              <i class="nav-icon fas fa-chart-bar"></i>
-              <p>
-                Pendaftaran Yudisium
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../pengajuan_berkas/index.html" class="nav-link" style="color: black;">
-              <i class="nav-icon fas fa-file-upload"></i>
-              <p>
-                Pengajuan Berkas
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../cek_status/index.html" class="nav-link" style="color: black;">
+            <a href="../validasi_berkas/index.html" class="nav-link" style="color: black;">
               <i class="nav-icon fas fa-check"></i>
               <p>
-                Cek Status Pendaftaran
+                Validasi Berkas
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" style="color: black;">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                Data Bebas Pustaka
               </p>
             </a>
           </li>
@@ -116,12 +108,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Detail Berkas</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Mahasiswa</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item"><a href="#">Data Yudisium</a></li>
+              <li class="breadcrumb-item active">Detail Berkas</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -132,52 +124,50 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Belum Divalidasi</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-6 mb-5">
+                <form class="">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img class="profile-user-img img-fluid img-circle" src="../../../assets/img/default.png" alt="">
+                  </div>
+                  <div class="row text-center m-3 py-2">
+                    <div class="col-6">
+                        <label class="form-label" for="ijazah">Ijazah SMA</label>
+                        <div class="bg-warning p-3 rounded">
+                            <img class="img-fluid" src="../../../assets/img/default.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label" for="akta">Akta Kelahiran</label>
+                        <div class="bg-warning p-3 rounded">
+                            <img class="img-fluid" src="../../../assets/img/default.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row text-center m-3 py-2">
+                    <div class="col-6">
+                        <label class="form-label" for="transkrip">Transkrip Nilai (TTD Wali)</label>
+                        <div class="bg-warning p-3 rounded">
+                            <img class="img-fluid" src="../../../assets/img/default.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label" for="teofl">Sertifikat TOEFL</label>
+                        <div class="bg-warning p-3 rounded">
+                            <img class="img-fluid" src="../../../assets/img/default.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </form>
           </div>
-          <div class="col-lg-4 col-6">
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>53</h3>
-
-                <p>Berkas Diajukan</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-6">
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53</h3>
-
-                <p>Sudah Divalidasi</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          <!-- /.col -->
         </div>
         <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
+
+    </div>
   <!-- /.content-wrapper -->
 
     <footer class="main-footer fixed-bottom">
